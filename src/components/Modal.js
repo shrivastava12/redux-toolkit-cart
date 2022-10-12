@@ -7,7 +7,7 @@ export default function Modal() {
     const dispatch =  useDispatch();
 
   return (
-    <aside className='modal-container'>
+    <aside className='modal-container'> 
         <div className='modal'>
             <h4>remove all the items from shopping cart?</h4>
             <div className='btn-container'>
