@@ -17,7 +17,7 @@ export const getCartItems = createAsyncThunk('cart/getCartItems',async(name,thun
         const res =  await axios.get(url);
         return res.data;
     }catch(e){
-        console.log(e)
+        return thunkAPI.rejectWithValue('Something went wrong');
     }
 })
 const cartSlice = createSlice({
